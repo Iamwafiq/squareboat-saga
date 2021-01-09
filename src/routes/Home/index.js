@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { getData } from './actions';
-const HomeComponent = () => {
+
+const HomeComponent = (props) => {
   const dispatch = useDispatch();
   const homeReducer = useSelector((state) => state.homeReducer);
 
